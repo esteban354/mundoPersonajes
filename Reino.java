@@ -17,13 +17,10 @@ class Personaje {
         return nombre;
     }
 
-    public int mostarVida() {
-        return vida;
-    }
+    public String mostrarEstadisticas() {
+    return "\n Vida: " + vida + "\n Ataque: " + ataque;
+}
 
-    public int mostarAtaque() {
-        return ataque;
-    }
 
     public String revelarSecreto() {
         return secreto;
@@ -87,29 +84,26 @@ public class Reino {
 
         switch (num) {
             case 1:
-                System.out.println(ironman.mostarNombre() + " Vida: " + ironman.mostarVida());
-                System.out.println(ironman.mostarNombre() + " Ataque: " + ironman.mostarAtaque());
+                System.out.println(ironman.mostarNombre() + " Estadisticas : " + ironman.mostrarEstadisticas());
                 System.out.println("Secreto: " + ironman.revelarSecreto()); 
                 ironman.accion();
             break;
 
             case 2:
-                System.out.println(spiderman.mostarNombre() + " Vida: " + spiderman.mostarVida());
-                System.out.println(spiderman.mostarNombre() + " Ataque: " + spiderman.mostarAtaque());
+                System.out.println(spiderman.mostarNombre() + " Estadisticas: " + spiderman.mostrarEstadisticas());
                 System.out.println("Secreto: " + spiderman.revelarSecreto());
                 spiderman.accion();
             break;
 
             case 3:
-                System.out.println(thor.mostarNombre() + " Vida: " + thor.mostarVida());
-                System.out.println(thor.mostarNombre() + " Ataque: " + thor.mostarAtaque());
+                System.out.println(thor.mostarNombre() + " Estadisticas: " + thor.mostrarEstadisticas());
                 System.out.println("Secreto: " + thor.revelarSecreto());
                 thor.accion();
             break;
 
             case 4:
-                System.out.println(capitanAmerica.mostarNombre() + " Vida: " + capitanAmerica.mostarVida());
-                System.out.println(capitanAmerica.mostarNombre() + " Ataque: " + capitanAmerica.mostarAtaque());
+               
+                System.out.println(capitanAmerica.mostarNombre() + " Estadisticas: " + capitanAmerica.mostrarEstadisticas());
                 System.out.println("Secreto: " + thor.revelarSecreto());
                 thor.accion();
             break;
