@@ -29,7 +29,7 @@ class Personaje {
         return secreto;
     }
 
-     public void actuar() {
+     public void accion() {
         System.out.println(nombre + " hace un ataque");
     }
 }
@@ -39,7 +39,7 @@ class Spiderman extends Personaje {
         super(nombre, secreto, vida, ataque);
     }
 
-    public void actuar() {
+    public void accion() {
         System.out.println("Ataque especial: lanza telarañas");
     }
 }
@@ -49,7 +49,7 @@ class Ironman extends Personaje {
         super(nombre, secreto, vida, ataque);
     }
     
-    public void actuar() {
+    public void accion() {
         System.out.println("Ataque especial: rayo laser");
     }
 }
@@ -59,7 +59,7 @@ class Thor extends Personaje {
         super(nombre, secreto, vida, ataque);
     }
 
-    public void actuar() {
+    public void accion() {
         System.out.println("Ataque especial: rayo ");
     }
 }
@@ -69,7 +69,7 @@ class CapitanAmerica extends Personaje {
         super(nombre, secreto, vida, ataque);
     }
 
-    public void actuar() {
+    public void accion() {
         System.out.println("Ataque especial: rayo ");
     }
 }
@@ -90,28 +90,28 @@ public class Reino {
                 System.out.println(ironman.mostarNombre() + " Vida: " + ironman.mostarVida());
                 System.out.println(ironman.mostarNombre() + " Ataque: " + ironman.mostarAtaque());
                 System.out.println("Secreto: " + ironman.revelarSecreto()); 
-                ironman.actuar();
+                ironman.accion();
             break;
 
             case 2:
                 System.out.println(spiderman.mostarNombre() + " Vida: " + spiderman.mostarVida());
                 System.out.println(spiderman.mostarNombre() + " Ataque: " + spiderman.mostarAtaque());
                 System.out.println("Secreto: " + spiderman.revelarSecreto());
-                spiderman.actuar();
+                spiderman.accion();
             break;
 
             case 3:
                 System.out.println(thor.mostarNombre() + " Vida: " + thor.mostarVida());
                 System.out.println(thor.mostarNombre() + " Ataque: " + thor.mostarAtaque());
                 System.out.println("Secreto: " + thor.revelarSecreto());
-                thor.actuar();
+                thor.accion();
             break;
 
             case 4:
                 System.out.println(capitanAmerica.mostarNombre() + " Vida: " + capitanAmerica.mostarVida());
                 System.out.println(capitanAmerica.mostarNombre() + " Ataque: " + capitanAmerica.mostarAtaque());
                 System.out.println("Secreto: " + thor.revelarSecreto());
-                thor.actuar();
+                thor.accion();
             break;
 
             default:
